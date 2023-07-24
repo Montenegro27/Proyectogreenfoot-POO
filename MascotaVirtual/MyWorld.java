@@ -30,5 +30,13 @@ public class MyWorld extends World
         addObject(capi,35,54);
         capi.setLocation(420,207);
         capi.setLocation(411,279);
+        Hamburguesa hamburguesa = new Hamburguesa();
+        addObject(hamburguesa,36,361);
+        Helado helado = new Helado();
+        addObject(helado,562,363);
+        Naranja naranja = new Naranja();
+        addObject(naranja,568,204);
+        Pizza pizza = new Pizza();
+        addObject(pizza,163,302);
     }
 }
