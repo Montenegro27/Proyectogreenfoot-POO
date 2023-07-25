@@ -37,7 +37,7 @@ public void act()
             if (target != null && target instanceof Capi) {
                 Capi capi = (Capi) target;
                 capi.recibirComida(this);
-                setLocation(150, 150); 
+                getWorld().removeObject(this); 
             }
         }
     }

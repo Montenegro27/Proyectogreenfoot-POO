@@ -17,7 +17,8 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        prepare();
+        prepare();        
+
     }
     
     /**
@@ -26,6 +27,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
+        
         Capi capi = new Capi();
         addObject(capi,35,54);
         capi.setLocation(420,207);
@@ -38,5 +40,21 @@ public class MyWorld extends World
         addObject(naranja,568,204);
         Pizza pizza = new Pizza();
         addObject(pizza,163,302);
+        Comida comida = new Comida();
+        addObject(comida,500,90);
+        comida.setLocation(410,268);
+        capi.setLocation(421,272);
+        capi.setLocation(404,266);
+        capi.setLocation(415,266);
+        capi.setLocation(504,92);
+        removeObject(comida);
+        capi.setLocation(527,105);
+        capi.setLocation(439,270);
     }
+    
+    //public void act() {
+      // if (Greenfoot.isKeyDown("r")){
+    //        Helado helado = new Helado();
+    //   }
 }
+
